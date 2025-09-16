@@ -76,12 +76,12 @@ body {
 
 @media (max-width: 375px) {
     .play__square {
-        grid-template-columns: repeat(3, 85px);
-        grid-template-rows: repeat(3, 85px);
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
         gap: 5px;
     }
     .square {
-        font-size: 40px;
+        font-size: 15vw;
     }
     body {
         justify-content: center;
