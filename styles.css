@@ -74,7 +74,7 @@ body {
     color: blue;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
     .play__square {
         grid-template-columns: repeat(3, 25vw);
         grid-template-rows: repeat(3, 25vw);
@@ -87,6 +87,6 @@ body {
         justify-content: center;
     }
     .counter {
-        width: 250px;
+        width: 75vw;
     }
 }
