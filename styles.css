@@ -43,8 +43,8 @@ body {
 /* Игровое поле */
 .play__square {
     display: grid;
-    grid-template-columns: repeat(3, 215px);
-    grid-template-rows: repeat(3, 215px);
+    grid-template-columns: repeat(3, 195px);
+    grid-template-rows: repeat(3, 195px);
     justify-content: center;
     gap: 8px;
     background-color: rgb(101, 188, 87);
