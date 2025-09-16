@@ -2,25 +2,11 @@ let countX = 0
 let countO = 0
 
 const squares = document.querySelectorAll('.square')
-const matrix = new Array(9).fill('')
 let mover = true
+let moveNumber = 0
 
-function move(event) {
-    const curValue = event.currentTarget
+const playerWins = document.querySelectorAll('.player__wins')
 
-    if (mover === true) {
-        curValue.classList.toggle('red')
-        curValue.textContent = '×'
-        mover = false
-    } else {
-        curValue.classList.toggle('blue')
-        curValue.textContent = '○'
-        mover = true
-      }
-
-    curValue.removeEventListener('click', move)
-}
-
-squares.forEach((square) => {
-    square.addEventListener('click', move)
-})
+const rows = [0, 0, 0]
+const columns = [0, 0 ,0]
+const diagonals = [0, 0]
