@@ -74,7 +74,7 @@ body {
     color: blue;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .play__square {
         grid-template-columns: repeat(3, 25vw);
         grid-template-rows: repeat(3, 25vw);
