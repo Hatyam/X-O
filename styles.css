@@ -1,0 +1,73 @@
+body {
+    margin: 0 0;
+    font-size: 24px;
+    line-height: 32px;
+    color: #111827;
+    font-weight: 400;
+
+    transition: .7s ease;
+    
+    background-image: url(images/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Счетчик побед */
+.counter {
+    width: 300px;
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.counter_xo {
+    flex: 1;
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(112, 180, 207);
+    border-radius: 10px;
+}
+
+.move {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+/* Игровое поле */
+.play__square {
+    display: grid;
+    grid-template-columns: repeat(3, 215px);
+    grid-template-rows: repeat(3, 215px);
+    justify-content: center;
+    gap: 8px;
+    background-color: rgb(101, 188, 87);
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.square {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.543);
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.square.red {
+    color: red;
+}
+
+.square.blue {
+    color: blue;
+}

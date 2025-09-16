@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>X-O</title>
+</head>
+
+<body>
+
+    <!-- <span style="color: red; font-size: 24px;">×</span>
+    <span style="color: blue; font-size: 24px;">○</span> -->
+
+    <div class="counter">
+        <div class="counter_xo counter_x">
+            <span class="player">×</span>
+            <span class="player__wins">0</span>
+        </div>
+        <div class="counter_xo counter_o">
+            <span class="player">○</span>
+            <span class="player__wins">0</span>
+        </div>
+    </div>
+    <div class="move">Ходит ×</div>
+
+    <div class="play__square">
+        <div class="square" data-index="1"></div>
+        <div class="square" data-index="2"></div>
+        <div class="square" data-index="3"></div>
+        <div class="square" data-index="4"></div>
+        <div class="square" data-index="5"></div>
+        <div class="square" data-index="6"></div>
+        <div class="square" data-index="7"></div>
+        <div class="square" data-index="8"></div>
+        <div class="square" data-index="9"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
